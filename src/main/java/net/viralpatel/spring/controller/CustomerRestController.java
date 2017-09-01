@@ -16,6 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 import net.viralpatel.spring.dao.CustomerDAO;
 import net.viralpatel.spring.model.Customer;
 
+
+/**
+ * @author Rajiv
+ *
+ */
 @RestController
 public class CustomerRestController {
 
@@ -56,7 +61,6 @@ public class CustomerRestController {
 		}
 
 		return new ResponseEntity(id, HttpStatus.OK);
-
 	}
 
 	@PutMapping("/customers/{id}")
